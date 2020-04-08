@@ -6,7 +6,7 @@ function animate_user_count_value(id, start, end) {
     var obj = document.getElementById(id);
     var timer = setInterval(function() {
         current += increment;
-        obj.innerHTML =current;
+        obj.innerHTML =("Users: "+current);
         if (current >= end) {
 			//obj.innerHTML =("$"+end.toFixed(2));
             clearInterval(timer);

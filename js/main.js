@@ -2,7 +2,7 @@
 function animate_user_count_value(id, start, end) {
     var current = start;
     var increment = 1;
-    var stepTime = 1;
+    var stepTime = 10;
     var obj = document.getElementById(id);
     var timer = setInterval(function() {
         current += increment;

@@ -1,3 +1,14 @@
 body{
-    background-color: blue;
+    background: -webkit-linear-gradient(45deg, #FF5F6D, #FFC371);
+    background-repeat: no-repeat;
+    height: 100vh;
+    overflow: hidden;
+}
+#count_actual{
+    width:100%;
+    font-size: 100px;
+    color:white;
+    text-align: center;
+    position: absolute;
+    top: 50%;
 }

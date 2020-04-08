@@ -14,3 +14,9 @@ body{
     position: absolute;
     top: 40%;
 }
+#confetti{
+    width: 100%;
+}
+img[src=""] {
+	display: none;
+ }

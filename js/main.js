@@ -15,7 +15,7 @@ function animate_user_count_value(id, start, end) {
 }
 //While we wait for the response from DB lets be pretty
 var top_counter=document.getElementById('count_actual');
-
+var confetti=document.getElementById('confetti');
 function check_donations(){
 	fetch('https://vidext-c1d58.firebaseapp.com/api/v1/usercount',{
 				method: 'GET',
@@ -33,6 +33,9 @@ function check_donations(){
 					//If the get donations succesful
 					response.json().then(function(response) {
                         console.log(response);
+                        if(parseInt(response.user_count)==100){
+                            confetti.src="./img/confet.gif";
+                        }
 						//This will animate the top total contributed value
 						animate_user_count_value("count_actual", 0, parseFloat(response.user_count));
 					});

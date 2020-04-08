@@ -32,6 +32,7 @@ function check_donations(){
 				else{
 					//If the get donations succesful
 					response.json().then(function(response) {
+                        console.log(response);
 						//This will animate the top total contributed value
 						animate_user_count_value("count_actual", 0, parseFloat(response.user_count));
 					});

@@ -33,7 +33,7 @@ function check_donations(){
 					//If the get donations succesful
 					response.json().then(function(response) {
                         console.log(response);
-                        if(parseInt(response.user_count)==100){
+                        if(parseInt(response.user_count)>=100){
                             confetti.src="./img/confet.gif";
                         }
 						//This will animate the top total contributed value
